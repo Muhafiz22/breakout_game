@@ -1,0 +1,3 @@
+gcc pong.c -l raylib -l m -o main_pong
+
+./main_pong
