@@ -112,7 +112,7 @@ int main()
 
     while(!WindowShouldClose())
     {
-        switch(screen)
+        switch(screen) //game logic handling
         {
             case LOGO:
             {
@@ -260,7 +260,7 @@ int main()
 
         ClearBackground(RAYWHITE);
 
-        switch(screen)
+        switch(screen)//game rendering part
         {
             case LOGO:
             {
