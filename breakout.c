@@ -83,7 +83,7 @@ int main()
     Brick bricks [BRICK_LINES][BRICKS_PER_LINE] = {0};
 
 //initialising player struct
-    player.position = (Vector2){screenWidth/2, screenHeight*7/8};
+    player.position = (Vector2){screenWidth/2.0, screenHeight*7.0/8.01  };
     player.speed = (Vector2){8.0f, 0.0f};
     player.size = (Vector2){100, 24};
     player.lives = PLAYERS_LIFE;
@@ -100,7 +100,7 @@ int main()
         for(int j=0; j<BRICKS_PER_LINE; j++)
         {
 
-            bricks[i][j].size = (Vector2){screenWidth/BRICKS_PER_LINE, 20};
+            bricks[i][j].size = (Vector2){ screenWidth/BRICKS_PER_LINE, 20};
             bricks[i][j].position = (Vector2){j*bricks[i][j].size.x, i*bricks[i][j].size.y + BRICKS_POSITION_y};
 
             bricks[i][j].bounds = (Rectangle){bricks[i][j].position.x, bricks[i][j].position.y, bricks[i][j].size.x, bricks[i][j].size.y};
